@@ -6,7 +6,7 @@ hide: true
 
 ### Me and Team
 
-Hi! My name is [Your Full Name].
+Hi! My name is Nitya.
 
 | Role         | Name     | Repo Location                       | Stream                | Repo Name |
 |--------------|----------|-------------------------------------|-----------------------|-----------|
@@ -37,6 +37,7 @@ Hi! My name is [Your Full Name].
 <a href="https://poway.instructure.com/" class="button small" style="background-color: #beb8b2ff">
    <span style="color: #FFFFFF">CANVAS</span> 
 </a>
+
 <br>
 
 ### Class Progress
