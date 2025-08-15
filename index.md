@@ -44,8 +44,7 @@ Hi! My name is [Your Full Name].
 </a>
 <a href="{{site.baseurl}}/turtle" class="button small" style="background-color: #2A7DB1">
     <span style="color: #000000">Turtle</span>
-</a> href="{{site.baseurl}}/turtle 2.0" class="button small" style="background-color: #2A7DB1">
-    <span style="color: #e88f8fff">Turtle</span>
+</a> 
 
 <br>
 
