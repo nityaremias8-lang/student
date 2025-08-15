@@ -34,8 +34,9 @@ Hi! My name is [Your Full Name].
 <a href="https://vscode.dev/" class="button small" style="background-color: #d38a4bff">
     <span style="color: #FFFFFF">VSCODE</span>
 </a>
-<button>hello</button>
-
+<a href="https://vscode.dev/" class="button small" style="background-color: #beb8b2ff">
+   <span style="color: #FFFFFF">VSCODE</span> 
+</a>
 <br>
 
 ### Class Progress
