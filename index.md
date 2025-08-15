@@ -37,7 +37,7 @@ Hi! My name is Nitya.
 <a href="https://poway.instructure.com/" class="button small" style="background-color: #beb8b2ff">
    <span style="color: #FFFFFF">CANVAS</span> 
 </a>
-
+<img src="ocean.jpeg">
 <br>
 
 ### Class Progress
