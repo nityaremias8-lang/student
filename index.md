@@ -34,8 +34,8 @@ Hi! My name is [Your Full Name].
 <a href="https://vscode.dev/" class="button small" style="background-color: #d38a4bff">
     <span style="color: #FFFFFF">VSCODE</span>
 </a>
-<a href="https://vscode.dev/" class="button small" style="background-color: #beb8b2ff">
-   <span style="color: #FFFFFF">VSCODE</span> 
+<a href="https://poway.instructure.com/" class="button small" style="background-color: #beb8b2ff">
+   <span style="color: #FFFFFF">CANVAS</span> 
 </a>
 <br>
 
