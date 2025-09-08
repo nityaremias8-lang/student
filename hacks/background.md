@@ -2,33 +2,46 @@
 layout: base
 title: Background with Object
 description: Use JavaScript to have an in motion background.
-sprite: images/platformer/sprites/flying-ufo.png
-background: images/platformer/backgrounds/alien_planet1.jpg
+# below are images for game
+sprite: images/platformer/sprites/redbird.png
+background: images/platformer/backgrounds/sunset.jpeg
 permalink: /background
 ---
 
+<!-- This is the Game World -->
 <canvas id="world"></canvas>
 
+<!-- Below is the code that makes the Game Worlds, complicated -->
 <script>
+  // Setting up image objects for background and player sprite
   const canvas = document.getElementById("world");
   const ctx = canvas.getContext('2d');
+  // Setting up image objects
   const backgroundImg = new Image();
   const spriteImg = new Image();
-  backgroundImg.src = '{{page.background}}';
-  spriteImg.src = '{{page.sprite}}';
-
+  // Jekll Assignment of Images
+  // Assign image sources from front matter vairables
+  backgroundImg.src = '{{page.background}}'; // background image
+  spriteImg.src = '{{page.sprite}}'; //Player Image
+// Track loaded images and start the game once both are loaded
   let imagesLoaded = 0;
   backgroundImg.onload = function() {
     imagesLoaded++;
     startGameWorld();
   };
+  /* Starts the game after images are laoded:- Creates game objects-Sets up game loop*/
   spriteImg.onload = function() {
     imagesLoaded++;
     startGameWorld();
   };
 
+  /* This block Starts the Game
+    *It checks for all images being loaded before starting
+  */
+
   function startGameWorld() {
     if (imagesLoaded < 2) return;
+    //Base class for game objects like background and player
 
     class GameObject {
       constructor(image, width, height, x = 0, y = 0, speedRatio = 0) {
@@ -45,7 +58,7 @@ permalink: /background
         ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
       }
     }
-
+    //Backgroud class scorlls the background image horizontally
     class Background extends GameObject {
       constructor(image, gameWorld) {
         // Fill entire canvas
@@ -59,6 +72,7 @@ permalink: /background
         ctx.drawImage(this.image, this.x + this.width, this.y, this.width, this.height);
       }
     }
+    // Player class with floating animation using sin wave
 
     class Player extends GameObject {
       constructor(image, gameWorld) {
@@ -75,6 +89,7 @@ permalink: /background
         this.frame++;
       }
     }
+    //Main game controller managing canvas and gam e loop
 
     class GameWorld {
       static gameSpeed = 5;
@@ -108,6 +123,7 @@ permalink: /background
         this.gameLoop();
       }
     }
+    // Intialize and start the game world
 
     const world = new GameWorld(backgroundImg, spriteImg);
     world.start();
