@@ -82,10 +82,12 @@ permalink: /background
         const y = (gameWorld.height - height) / 2;
         super(image, width, height, x, y);
         this.baseY = y;
+        this.baseX= x;
         this.frame = 0;
       }
       update() {
         this.y = this.baseY + Math.sin(this.frame * 0.05) * 20;
+        this.x = this.baseX + Math.cos(this.frame * 0.05) * 100;
         this.frame++;
       }
     }
