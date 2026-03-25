@@ -1,9 +1,11 @@
 ---
 layout: post
-title: API read
+title: API create
 permalink: /api/create
 show_reading_time: false
 ---
+
+<h3>Add a New User to InfoDB</h3>
 <form id="addUserForm">
   <label for="firstName">First Name:</label>
   <input type="text" id="firstName" name="firstName" required><br>
